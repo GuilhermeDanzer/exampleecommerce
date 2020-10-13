@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  justify-content: center;
+  padding:0.2rem
+  //align-items: center;
+  //flex-direction: column;
+}
+.titulo{
+    // padding:1.2rem
+}
+.divBotao{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.descricao{
+ font-size: 0.8rem;
+ //padding:1.2rem;
+}
+
+.content > *{
+  padding:1.2rem
+}
+
+.box{
+  grid-template-columns: repeat(auto-fill,minmax(25rem, 1fr));
+  display: grid;
+  margin-top: 1.2rem;
+  background-color: #ffffff;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
+.firstColumn{
+  grid-column: 1;
+  border: 1px solid black;
+}
+.secondColumn{
+  border: 1px solid black;
+  grid-column: 2;
+}
+
+.imagem{
+  object-fit: cover;
+  width: 100%;
+}

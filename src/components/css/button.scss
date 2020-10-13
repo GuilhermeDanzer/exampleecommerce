@@ -1,0 +1,35 @@
+.teste{
+  outline: none;
+  border: none;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  transition: 0.2s ease-in-out;
+}
+
+.botao{
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+  border:1px solid #ebedee;
+  height: 40px;
+  padding:0.5rem;
+  text-align: center;
+  outline: none;
+
+}
+.botao.active{
+  background-color: #111111;
+  color:#ebedee;
+  font-weight: bold;
+}
+.botao:checked{
+  background-color: #111111;
+}
+

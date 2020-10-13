@@ -1,0 +1,40 @@
+a{
+  color:#000
+}
+
+.cartButton{
+  border:none;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+}
+.cartButton:hover{
+  background-color: #111111;
+  color:#ebedee;
+  font-weight: bold;
+}
+.cart{
+ 
+  position: absolute;
+  width: 18.75rem;
+  /* height: 30%; */
+  display: flex;
+  top:3.43rem;
+  right: 2.5rem;
+  z-index: 2;
+  flex-direction: column;
+  background-color: #ffff;
+  //border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+
+}
+
+.itens{
+  cursor: initial;
+  margin: 0.625rem;
+  padding:0.3125rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
