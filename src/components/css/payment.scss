@@ -1,0 +1,11 @@
+.paymentForm{
+  display:grid;
+  grid-template-columns: repeat(1,minmax(340px,1fr));
+  grid-template-rows: repeat(6,minmax(100px,130px));
+  background-color: #f908;
+}
+
+.arroundInput{
+  display: flex;
+  justify-content: center;
+}

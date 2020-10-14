@@ -38,7 +38,7 @@ export const Cart = ({ open }) => {
         })
       )}
       {itens.length < 1 ? null : (
-        <Link exact to="/compra">
+        <Link exact to="/pagamento">
           <Button className="botao cartButton" texto="Finalize sua compra" />
         </Link>
       )}

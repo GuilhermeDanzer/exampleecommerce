@@ -5,6 +5,8 @@ export const Routes = [
     sidebarName: 'Home',
     navbarName: 'Home',
     icon: '',
+  },{
+    path:'/pagamento',
   }
 ]
 

@@ -1,9 +1,12 @@
 import React from 'react'
 import './css/input.scss'
 
-export const Input = () =>{
+export const Input = ({...props}) =>{
 
   return(
-    <input className='input'/>
+    <>
+
+    <input {...props} className='input'/>
+    </>
   )
 }

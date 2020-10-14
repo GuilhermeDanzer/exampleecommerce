@@ -5,6 +5,7 @@ import { createStore } from "redux";
 import rootReducer from "./reducers/rootReducer";
 import "./index.scss";
 import { Produto } from "./screens/Produto";
+import {Pagamento} from './screens/Pagamento'
 import Layout from "./layout/Layout";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -16,7 +17,8 @@ const routing = (
     <Router>
       <Switch>
         <Layout>
-          <Route path="/" component={Produto} />
+          <Route exact path="/" component={Produto} />
+          <Route path="/pagamento" component={Pagamento} />
         </Layout>
       </Switch>
     </Router>
