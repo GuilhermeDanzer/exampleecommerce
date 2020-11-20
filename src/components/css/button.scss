@@ -1,4 +1,4 @@
-.teste{
+.teste {
   outline: none;
   border: none;
   height: 3rem;
@@ -7,7 +7,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.botao{
+.botao {
   background: none;
   border: none;
   color: inherit;
@@ -17,19 +17,18 @@
   text-align: inherit;
   text-transform: inherit;
   cursor: pointer;
-  border:1px solid #ebedee;
+  border: 1px solid #ebedee;
   height: 40px;
-  padding:0.5rem;
+  padding: 0.5rem;
   text-align: center;
   outline: none;
-
 }
-.botao.active{
+.botao.ativo {
   background-color: #111111;
-  color:#ebedee;
+  color: #ebedee;
   font-weight: bold;
 }
-.botao:checked{
+.botao:active {
   background-color: #111111;
+  color: #ebedee;
 }
-

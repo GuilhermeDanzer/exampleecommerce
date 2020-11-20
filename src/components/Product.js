@@ -2,26 +2,26 @@ import React, { useState } from "react";
 import "./css/product.scss";
 import { Button } from "./Button";
 import { SizeClothes } from "./SizeClothes";
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
 
 export const Product = ({ img }) => {
-  const [state, setState] = useState({nome:'Red Hoodie',preco:19.99,tamanho:''});
-
+  const [state, setState] = useState({
+    nome: "Red Hoodie",
+    preco: 19.99,
+    tamanho: "",
+  });
 
   const dispatch = useDispatch();
 
-
-  const addCart = () =>{
-
+  const addCart = () => {
     let item = {
-      id:Math.random(),
-      nome:state.nome ,
-      preco:state.preco,
-      tamanho:state.tamanho
-      
-    }
-    dispatch({type:'ADD_ITEM',payload:item})
-  }
+      id: Math.random(),
+      nome: state.nome,
+      preco: state.preco,
+      tamanho: state.tamanho,
+    };
+    dispatch({ type: "ADD_ITEM", payload: item });
+  };
   return (
     <div style={{ marginLeft: 200, marginRight: 200 }}>
       <div className="box">
@@ -46,12 +46,10 @@ export const Product = ({ img }) => {
               vitae, dictum ac enim. Maecenas tempus ac enim et finibus.
             </p>
           </div>
+          <p style={{ alignSelf: "flex-end" }}>R$: {state.preco}</p>
           <SizeClothes value={state} setValue={setState} />
           <div className="divBotao">
-            <Button
-              onClick={() => addCart()}
-              texto="Adicione ao carrinho"
-            />
+            <Button onClick={() => addCart()}>Adicione ao carrinho</Button>
           </div>
         </div>
       </div>

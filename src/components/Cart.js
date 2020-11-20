@@ -2,16 +2,15 @@ import React from "react";
 import "./css/cart.scss";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
-import { useSelector,useDispatch } from "react-redux";
-import HighlightOffIcon from '@material-ui/icons/HighlightOff';
+import { useSelector, useDispatch } from "react-redux";
+import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 export const Cart = ({ open }) => {
   const itens = useSelector((state) => state.cart.cartItems);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-
-  const deleteCart = (id) =>{
-    return dispatch({type:'REMOVE_ITEM',payload:id})
-  }
+  const deleteCart = (id) => {
+    return dispatch({ type: "REMOVE_ITEM", payload: id });
+  };
 
   console.log(itens);
   return (
@@ -29,9 +28,12 @@ export const Cart = ({ open }) => {
                   {produtos.nome} {produtos.tamanho}
                 </h6>
               </div>
-              <div style={{display:"flex"}} key={produtos.id}>
+              <div style={{ display: "flex" }} key={produtos.id}>
                 <h6>{produtos.preco}</h6>
-                <HighlightOffIcon onClick={()=>deleteCart(produtos.id)} style={{fontSize:15, cursor:'pointer'}}/>
+                <HighlightOffIcon
+                  onClick={() => deleteCart(produtos.id)}
+                  style={{ fontSize: 15, cursor: "pointer" }}
+                />
               </div>
             </div>
           );
@@ -39,7 +41,7 @@ export const Cart = ({ open }) => {
       )}
       {itens.length < 1 ? null : (
         <Link exact to="/pagamento">
-          <Button className="botao cartButton" texto="Finalize sua compra" />
+          <Button className="botao cartButton">Finalize sua compra</Button>
         </Link>
       )}
     </div>

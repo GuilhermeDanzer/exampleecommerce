@@ -35,13 +35,14 @@ export const SizeClothes = ({ value, setValue }) => {
         return (
           <Button
             className={
-              value.tamanho === tamanho.tamanho ? "botao active" : "botao"
+              value.tamanho === tamanho.tamanho ? "botao ativo" : "botao"
             }
             key={i}
-            texto={tamanho.tamanho}
             style={{ fontSize: 13 }}
             onClick={() => someFunct(tamanho.tamanho)}
-          />
+          >
+            {tamanho.tamanho}
+          </Button>
         );
       })}
     </div>

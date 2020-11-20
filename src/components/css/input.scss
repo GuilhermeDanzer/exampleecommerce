@@ -1,11 +1,9 @@
-
 @import "../../Sass/mainColors.scss";
-.input{
- 
-  height: 35px;
-  outline:none;
-  padding:10px;
+.input {
+  outline: 0;
+  border-width: 0 0 2px;
 
-  border: none;
-  border-bottom: olivedrab 1px solid;
+  font-size: 16px;
+  border-color: #929292;
+  background-color: #fff;
 }

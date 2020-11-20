@@ -1,12 +1,10 @@
-import React from 'react'
-import './css/input.scss'
-
-export const Input = ({...props}) =>{
-
-  return(
+import React from "react";
+import "./css/input.scss";
+import InputMask from "react-input-mask";
+export const Input = ({ ...props }) => {
+  return (
     <>
-
-    <input {...props} className='input'/>
+      <InputMask {...props} className="input" />
     </>
-  )
-}
+  );
+};
